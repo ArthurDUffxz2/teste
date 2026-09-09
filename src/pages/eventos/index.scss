@@ -1,0 +1,49 @@
+
+
+.Evento h1{
+    font-size: 2rem;
+}
+
+.Evento{
+    text-align: center;
+    margin-top:10rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width:25rem;
+    height: 25rem;
+    background-color: rgb(216, 214, 214);
+    margin-left: 27rem;
+    border: 2rem black;
+    border-radius: 2rem;
+
+    .Partezinha{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        padding: 1rem;
+}
+
+body{
+    background-color: rgb(169, 169, 187);
+}
+
+}
+
+
+.botao{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 2.5rem;
+    width: 15rem;
+    height: 3rem;
+    background-color: rgb(168, 168, 164);
+    border-radius: 2rem;
+}
+
+.botao:hover{
+    background-color:rgb(194, 194, 189);
+}
