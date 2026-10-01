@@ -8,6 +8,8 @@ import Cadastro from './pages/Cadastro/index.jsx'
 import './pages/Cadastro/index.scss'
 import Contador from './pages/Contador/index.jsx';
 import './pages/Contador/index.scss'
+import Texto from './pages/texto/index.jsx';
+import './pages/texto/index.scss'
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
  
  
@@ -20,6 +22,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
       <Route path='/Evento' element={<Evento/>}/>
       <Route path='/Cadastro' element={<Cadastro/>}/>
       <Route path='/Contador' element={<Contador/>}/>
+      <Route path='/Texto' element={<Texto/>}/>
     </Routes>
     </BrowserRouter>
  )
