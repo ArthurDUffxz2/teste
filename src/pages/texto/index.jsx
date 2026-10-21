@@ -1,5 +1,6 @@
 import './index.scss';
 import { useState } from 'react';
+import Cabecalho from "../../components/cabecalho/index.jsx";
 
 function Texto() {
 
@@ -52,6 +53,7 @@ function Texto() {
     
   return (
     <div className="Texto" style={{backgroundColor:cor}}>
+       <Cabecalho />
         <h1>{descricao2}</h1>
         <input onChange={pegarTexto} type='text' placeholder='digite algo'/> 
         <button onClick={trocarTexto}>Mudar</button>

@@ -9,6 +9,9 @@ import './pages/Cadastro/index.scss'
 import Contador from './pages/Contador/index.jsx';
 import './pages/Contador/index.scss'
 import Texto from './pages/texto/index.jsx';
+import Cabecalho from './components/cabecalho/index.jsx';
+import Cep from './pages/cep/index.jsx';
+import './pages/cep/index.scss'
 import './pages/texto/index.scss'
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
  
@@ -23,6 +26,8 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
       <Route path='/Cadastro' element={<Cadastro/>}/>
       <Route path='/Contador' element={<Contador/>}/>
       <Route path='/Texto' element={<Texto/>}/>
+      <Route path='/Cabecalho' element={<Cabecalho/>}/>
+      <Route path='/Cep' element={<Cep/>}/>
     </Routes>
     </BrowserRouter>
  )
