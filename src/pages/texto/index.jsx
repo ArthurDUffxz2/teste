@@ -22,6 +22,33 @@ function Texto() {
         setmudarcor(cornova)
       }
 
+      const[n1, setN1] = useState('')
+      const[n2,setN2] = useState('')
+      const[resp,setResp] = useState('')
+
+        function somar() {
+            let soma = Number(n1) + Number(n2)
+            setResp(soma);
+
+        }
+
+        function subtrair() {
+            let soma = Number(n1) - Number(n2)
+            setResp(soma);
+
+        }
+
+        function dividir() {
+            let soma = Number(n1) / Number(n2)
+            setResp(soma);
+
+        }
+
+        function multiplicar() {
+            let soma = Number(n1) * Number(n2)
+            setResp(soma);
+
+        }
     
   return (
     <div className="Texto" style={{backgroundColor:cor}}>
@@ -30,6 +57,27 @@ function Texto() {
         <button onClick={trocarTexto}>Mudar</button>
          <h1>Troque a cor de fundo</h1>
         <input onChange={trocarCor} type='color'/>
+          <section className="section">
+                <div className="c">
+
+                    <h2>Calculadora</h2>
+
+                    <div className="inputs">
+
+                       <input type="text" value={n1} onChange={(e)=>setN1(e.target.value)} />
+                       <input type="text" value={n2} onChange={(e)=>setN2(e.target.value)} />
+                       <div>=</div>
+                       
+                       <div>{resp}</div>
+                         
+                       <button onClick={somar}>Somar</button>
+                       <button onClick={subtrair}>subtrair</button>
+                       <button onClick={dividir}>dividir</button>
+                       <button onClick={multiplicar}>multiplicar</button>
+                </div>
+                </div>
+               </section>
+
     </div>
        
   );
