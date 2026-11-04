@@ -5,7 +5,7 @@ function Cabecalho() {
   return (
     <div className="Cabecalho">
       <header>
-        <h1>Venda dos Ingressos</h1>
+        <h1>Venda de açai</h1>
         </header>
     </div>
   );

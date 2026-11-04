@@ -14,7 +14,7 @@ import Cep from './pages/cep/index.jsx';
 import './pages/cep/index.scss'
 import './pages/texto/index.scss'
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import Ingressos from './pages/ingresso/index.jsx';
+import Açai from './pages/açai/index.jsx';
  
  
  export default function Router() {
@@ -29,7 +29,7 @@ import Ingressos from './pages/ingresso/index.jsx';
       <Route path='/Texto' element={<Texto/>}/>
       <Route path='/Cabecalho' element={<Cabecalho/>}/>
       <Route path='/Cep' element={<Cep/>}/>
-      <Route path='/Ingresso' element={<Ingressos/>}/>
+      <Route path='/acai' element={<Açai/>}/>
     </Routes>
     </BrowserRouter>
  )
